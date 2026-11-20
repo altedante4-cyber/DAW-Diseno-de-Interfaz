@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #292929;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-areas:
+        "cabecera cabecera"
+        "lateral contenido"
+        "pie pie";
+    grid-template-columns: 220px minmax(0, 1fr);
+    max-width: 1100px;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+header {
+    grid-area: cabecera;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 18px 26px;
+    color: #fff;
+    background: #344f46;
+}
+
+header h1,
+header p,
+aside h2,
+footer h2 {
+    margin: 0;
+}
+
+header p {
+    color: #e2e9e4;
+}
+
+header a {
+    color: #fff;
+}
+
+aside {
+    grid-area: lateral;
+    padding: 24px 18px;
+    background: #f0f2ee;
+}
+
+aside nav {
+    display: grid;
+    gap: 12px;
+    margin-top: 14px;
+}
+
+aside a {
+    color: #344f46;
+}
+
+main {
+    grid-area: contenido;
+    min-width: 0;
+    padding: 24px;
+}
+
+.bienvenida {
+    margin-bottom: 28px;
+    padding: 20px;
+    background: #f5f3e9;
+}
+
+.bienvenida h2,
+.bienvenida p {
+    margin-top: 0;
+}
+
+audio {
+    display: block;
+    width: min(100%, 480px);
+    margin-top: 14px;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.productos article {
+    flex: 1 1 190px;
+    padding: 16px;
+    border: 1px solid #d9ded9;
+}
+
+.productos h3 {
+    margin-top: 0;
+}
+
+.productos p:last-child {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+footer {
+    grid-area: pie;
+    padding: 18px 26px;
+    color: #fff;
+    background: #344f46;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+footer a {
+    color: #fff;
+}
+
+@media (max-width: 650px) {
+    .contenedor {
+        grid-template-areas:
+            "cabecera"
+            "lateral"
+            "contenido"
+            "pie";
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    aside nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main {
+        padding: 18px;
+    }
+}

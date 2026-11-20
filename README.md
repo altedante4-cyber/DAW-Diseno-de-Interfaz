@@ -11,6 +11,7 @@ https://altedante4-cyber.github.io/DAW-Diseno-de-Interfaz/
 - [C1 · Header con Flexbox](ejercicios/c1-flexbox/)
 - [C2 · Diseño responsive con flex-wrap](ejercicios/c2-responsive/)
 - [C3 · Página con CSS Grid](ejercicios/c3-grid/)
+- [C8 · Reproductor de audio](ejercicios/c8-audio/)
 - [Ejercicio 2 · Tienda de productos](ejercicios/02-productos/)
 
-La entrega con los enlaces y la captura está en [ENTREGA.md](ENTREGA.md).
+La entrega C7 está en [ENTREGA.md](ENTREGA.md), y la entrega C8 en [ENTREGA-C8.md](ENTREGA-C8.md).

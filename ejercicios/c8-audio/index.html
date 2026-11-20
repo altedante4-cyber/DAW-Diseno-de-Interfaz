@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad C8 - Reproductor de audio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <div>
+                <h1>Tienda de material de oficina</h1>
+                <p>Todo lo que necesitas para tus ideas.</p>
+            </div>
+            <a href="../../index.html">Volver a tareas</a>
+        </header>
+
+        <aside>
+            <h2>Menú</h2>
+            <nav aria-label="Menú de la tienda">
+                <a href="#bienvenida">Bienvenida</a>
+                <a href="#catalogo">Catálogo</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </aside>
+
+        <main>
+            <section id="bienvenida" class="bienvenida">
+                <h2>¡Te damos la bienvenida!</h2>
+                <p>Escucha nuestro mensaje antes de descubrir el catálogo.</p>
+                <audio controls preload="metadata">
+                    <source src="audio/jingle-tienda.mp3" type="audio/mpeg">
+                    <source src="audio/jingle-tienda.ogg" type="audio/ogg">
+                    Tu navegador no admite audio HTML5. Puedes <a href="audio/jingle-tienda.mp3">descargar el mensaje de bienvenida</a>.
+                </audio>
+            </section>
+
+            <section id="catalogo">
+                <h2>Productos destacados</h2>
+                <div class="productos">
+                    <article>
+                        <h3>Cuaderno A5</h3>
+                        <p>Papel reciclado con cuadrícula de 5 mm.</p>
+                        <p>Precio: 4,50 €</p>
+                    </article>
+                    <article>
+                        <h3>Pack de bolígrafos</h3>
+                        <p>Diez bolígrafos azules de secado rápido.</p>
+                        <p>Precio: 3,20 €</p>
+                    </article>
+                    <article>
+                        <h3>Archivador de palanca</h3>
+                        <p>Formato folio, lomo ancho. Temporalmente agotado.</p>
+                        <p>Precio: 5,90 €</p>
+                    </article>
+                    <article>
+                        <h3>Grapadora de sobremesa</h3>
+                        <p>Capacidad para 25 hojas, incluye grapas.</p>
+                        <p>Precio: 7,80 €</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer id="contacto">
+            <h2>Contacto</h2>
+            <p>Escríbenos a <a href="mailto:tienda@example.com">tienda@example.com</a>.</p>
+        </footer>
+    </div>
+</body>
+</html>
