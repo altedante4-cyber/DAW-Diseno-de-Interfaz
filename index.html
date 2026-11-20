@@ -1,54 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Índice de tareas del módulo Diseño de Interfaces Web.">
-  <title>DIW | Tareas</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIW - Ejercicios</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="cabecera">
-    <a class="marca" href="index.html">DIW <span>· Diseño de Interfaces Web</span></a>
-    <nav aria-label="Navegación principal"><a href="#tareas">Tareas</a></nav>
-  </header>
+    <header>
+        <span>DIW</span>
+        <nav>
+            <a href="#tareas">Tareas</a>
+            <a href="ejercicios/02-productos/index.html">Ejercicio 2</a>
+        </nav>
+    </header>
 
-  <main>
-    <section class="presentacion">
-      <p class="etiqueta">CUADERNO DE EJERCICIOS</p>
-      <h1>Tareas de diseño web</h1>
-      <p class="descripcion">Aquí encontrarás los ejercicios del módulo. Iré añadiendo un enlace cada vez que publique una nueva tarea.</p>
-    </section>
+    <main>
+        <h1>Ejercicios de Diseño de Interfaces Web</h1>
+        <p>Selecciona una tarea para abrirla.</p>
 
-    <section class="tareas" id="tareas" aria-labelledby="titulo-tareas">
-      <div class="titulo-seccion">
-        <h2 id="titulo-tareas">Tareas</h2>
-        <span>3 ejercicios</span>
-      </div>
-
-      <a class="tarea" href="ejercicios/c1-flexbox/index.html">
-        <span class="numero">01</span>
-        <span class="detalle"><strong>Cabecera con Flexbox</strong><small>Alineación y distribución de elementos</small></span>
-        <span class="flecha" aria-hidden="true">↗</span>
-      </a>
-      <a class="tarea" href="ejercicios/c2-responsive/index.html">
-        <span class="numero">02</span>
-        <span class="detalle"><strong>Diseño responsive</strong><small>Tarjetas de productos con flex-wrap</small></span>
-        <span class="flecha" aria-hidden="true">↗</span>
-      </a>
-      <a class="tarea" href="ejercicios/c3-grid/index.html">
-        <span class="numero">03</span>
-        <span class="detalle"><strong>Maquetación con Grid</strong><small>Diseño de una página completa</small></span>
-        <span class="flecha" aria-hidden="true">↗</span>
-      </a>
-    </section>
-
-    <aside class="referencia">
-      <div><p class="etiqueta">PÁGINA DE REFERENCIA</p><h2>Tienda de material de oficina</h2></div>
-      <a href="ejercicios/02-productos/index.html">Ver ejercicio 2 <span aria-hidden="true">↗</span></a>
-    </aside>
-  </main>
-
-  <footer>DIW · Cuaderno de ejercicios</footer>
+        <section class="productos" id="tareas">
+            <article class="tarjeta">
+                <div class="imagen"></div>
+                <h2><a href="ejercicios/c1-flexbox/index.html">Actividad C1</a></h2>
+                <p>Cabecera con Flexbox</p>
+            </article>
+            <article class="tarjeta">
+                <div class="imagen"></div>
+                <h2><a href="ejercicios/c2-responsive/index.html">Actividad C2</a></h2>
+                <p>Diseño responsive con flex-wrap</p>
+            </article>
+            <article class="tarjeta">
+                <div class="imagen"></div>
+                <h2><a href="ejercicios/c3-grid/index.html">Actividad C3</a></h2>
+                <p>Maquetación de una página con Grid</p>
+            </article>
+            <article class="tarjeta">
+                <div class="imagen"></div>
+                <h2><a href="ejercicios/02-productos/index.html">Ejercicio 2</a></h2>
+                <p>Tienda de material de oficina</p>
+            </article>
+        </section>
+    </main>
 </body>
 </html>
