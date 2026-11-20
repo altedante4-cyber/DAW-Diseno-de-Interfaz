@@ -1,0 +1,35 @@
+.contenedor {
+    grid-template-areas:
+        "cabecera cabecera"
+        "hero hero"
+        "lateral contenido"
+        "pie pie";
+}
+
+.hero {
+    grid-area: hero;
+    position: relative;
+    min-height: 260px;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    background: #344f46;
+}
+
+.hero video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero h2 {
+    position: relative;
+    color: white;
+}
+
+.video-presentacion video {
+    display: block;
+    width: min(100%, 640px);
+}
