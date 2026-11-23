@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad C10 - Animaciones</title>
+    <link rel="stylesheet" href="../c2-responsive/styles.css">
+    <link rel="stylesheet" href="../c3-grid/styles.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <div>
+                <h1>Tienda de material de oficina</h1>
+                <p>Todo lo que necesitas para tus ideas.</p>
+            </div>
+            <a href="../../index.html">Volver a tareas</a>
+        </header>
+
+        <section class="hero">
+            <video autoplay muted loop playsinline poster="media/poster-diw.jpg" aria-hidden="true">
+                <source src="media/presentacion-diw.mp4" type="video/mp4">
+                <source src="media/presentacion-diw.webm" type="video/webm">
+            </video>
+            <h2>Ideas en movimiento</h2>
+        </section>
+
+        <aside>
+            <h2>Menú</h2>
+            <nav aria-label="Menú de la tienda">
+                <a href="#bienvenida">Bienvenida</a>
+                <a href="#video">Vídeo</a>
+                <a href="#animaciones">Animaciones</a>
+                <a href="#catalogo">Catálogo</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </aside>
+
+        <main>
+            <section id="bienvenida" class="bienvenida">
+                <h2>¡Te damos la bienvenida!</h2>
+                <p>Escucha nuestro mensaje antes de descubrir el catálogo.</p>
+                <audio controls preload="metadata">
+                    <source src="audio/jingle-tienda.mp3" type="audio/mpeg">
+                    <source src="audio/jingle-tienda.ogg" type="audio/ogg">
+                    Tu navegador no admite audio HTML5. Puedes <a href="audio/jingle-tienda.mp3">descargar el mensaje de bienvenida</a>.
+                </audio>
+            </section>
+
+            <section id="video" class="video-presentacion">
+                <h2>Conoce nuestra tienda</h2>
+                <p>Una breve presentación de nuestra papelería.</p>
+                <video controls preload="metadata" poster="media/poster-diw.jpg" aria-label="Vídeo de presentación de la tienda">
+                    <source src="media/presentacion-diw.mp4" type="video/mp4">
+                    <source src="media/presentacion-diw.webm" type="video/webm">
+                    Tu navegador no admite vídeo HTML5. Puedes <a href="media/presentacion-diw.mp4">descargar el vídeo</a>.
+                </video>
+            </section>
+
+            <section id="animaciones" class="nota-animacion">
+                <h2>Comparación de animaciones</h2>
+                <p>Las tres primeras tarjetas comparan las curvas ease, ease-in-out y linear, con distintas duraciones.</p>
+            </section>
+
+            <section id="catalogo">
+                <h2>Productos destacados</h2>
+                <div class="productos">
+                    <article class="tarjeta tarjeta-animada entrada-ease">
+                        <div class="imagen"></div>
+                        <h2>Cuaderno A5</h2>
+                        <p class="etiqueta-animacion">ease · 0,7 s</p>
+                        <p>Papel reciclado con cuadrícula de 5 mm.</p>
+                        <p>Precio: 4,50 €</p>
+                        <button class="boton-producto" type="button">Ver producto</button>
+                    </article>
+                    <article class="tarjeta tarjeta-animada entrada-ease-in-out">
+                        <div class="imagen"></div>
+                        <h2>Pack de bolígrafos</h2>
+                        <p class="etiqueta-animacion">ease-in-out · 1,1 s</p>
+                        <p>Diez bolígrafos azules de secado rápido.</p>
+                        <p>Precio: 3,20 €</p>
+                        <button class="boton-producto" type="button">Ver producto</button>
+                    </article>
+                    <article class="tarjeta tarjeta-animada entrada-linear">
+                        <div class="imagen"></div>
+                        <h2>Archivador de palanca</h2>
+                        <p class="etiqueta-animacion">linear · 1,5 s</p>
+                        <p>Formato folio, lomo ancho. Temporalmente agotado.</p>
+                        <p>Precio: 5,90 €</p>
+                        <button class="boton-producto" type="button">Ver producto</button>
+                    </article>
+                    <article class="tarjeta">
+                        <div class="imagen"></div>
+                        <h2>Grapadora de sobremesa</h2>
+                        <p>Capacidad para 25 hojas, incluye grapas.</p>
+                        <p>Precio: 7,80 €</p>
+                        <button class="boton-producto" type="button">Ver producto</button>
+                    </article>
+                    <article class="tarjeta">
+                        <div class="imagen"></div>
+                        <h2>Kit de organización</h2>
+                        <p>Un conjunto sencillo para ordenar tu escritorio.</p>
+                        <p>Precio: 8,50 €</p>
+                        <button class="boton-producto" type="button">Ver producto</button>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer id="contacto">
+            <h2>Contacto</h2>
+            <p>Escríbenos a <a href="mailto:tienda@example.com">tienda@example.com</a>.</p>
+        </footer>
+    </div>
+</body>
+</html>
