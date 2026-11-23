@@ -1,12 +1,14 @@
 # DIW · Cuaderno de diseño
 
-Repositorio de prácticas del módulo de **Diseño de Interfaces Web**. La portada reúne los ejercicios y toma como punto de partida la tienda de material de oficina del ejercicio 2.
+Repositorio de prácticas del módulo de **Diseño de Interfaces Web**. La portada de C7 está en `ejercicios/c7-inicio/` y toma como base la estructura Grid del ejercicio 3. El `index.html` de la raíz redirige a esa portada para mantener la dirección principal de GitHub Pages.
 
 ## Sitio publicado
 
 https://altedante4-cyber.github.io/DAW-Diseno-de-Interfaz/
 
 ## Ejercicios
+
+- [C7 · Página de inicio](ejercicios/c7-inicio/)
 
 - [C1 · Header con Flexbox](ejercicios/c1-flexbox/)
 - [C2 · Diseño responsive con flex-wrap](ejercicios/c2-responsive/)

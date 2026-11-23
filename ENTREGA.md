@@ -7,4 +7,4 @@
 
 ## Captura de la web
 
-![Captura de la página de inicio del cuaderno DIW](captura.png)
+![Captura de la página de inicio del cuaderno DIW](ejercicios/c7-inicio/captura.png)
