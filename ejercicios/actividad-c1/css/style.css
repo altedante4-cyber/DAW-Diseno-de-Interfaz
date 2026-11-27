@@ -1,0 +1,50 @@
+
+
+body {
+  margin: 0;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  color: #222;
+  background-color: #f4f4f4;
+}
+
+header,
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 1rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+section {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.tarjeta {
+  flex: 1;
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.destacado {
+  background-color: #ffe08a;
+}
+
+.controles {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+button {
+  padding: 0.65rem 1rem;
+  cursor: pointer;
+}
